@@ -1,0 +1,172 @@
+<!DOCtype html>
+<html>
+<head>
+
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+<style type="text/css">
+</style>
+<script type="script/javascript">
+function validate()
+{
+var n1=document.forms["reform"]["uname"];
+var n2=document.forms["reform"]["pword"];
+var n3=document.forms["reform"]["fname"];
+var n9=document.forms["reform"]["lname"];
+var n5=document.forms["reform"]["email"];
+var n6=document.forms["reform"]["address"];
+var n7=document.forms["reform"]["phn"];
+var n8=document.forms["reform"]["lno"];
+var n4=document.getElementsByName("gender");
+
+if(n1.value=="")
+{
+alert("Enter the name");
+n1.focus();
+return false;
+}
+if(n2.value=="")
+{
+alert("Enter the password");
+n2.focus();
+return false;
+}
+if(n3.value=="")
+{
+alert("Enter the first name");
+n3.focus();
+return false;
+}
+if(n9.value=="")
+{
+alert("Enter the last name");
+n3.focus();
+return false;
+}
+if(n5.value=="")
+{
+alert("Enter the Email id");
+n5.focus();
+return false;
+}
+
+if(!valid)
+{
+alert("Select an gender");
+return false;
+}
+
+if(n6.value=="")
+{
+alert("Enter the Address");
+n6.focus();
+return false;
+}
+if(n7.value=="")
+{
+alert("Enter the contact no");
+n7.focus();
+return false;
+}
+if(n8.value=="")
+{
+alert("Enter the Landline no");
+n8.focus();
+return false;
+}
+
+var i=0;
+var valid=false;
+while(!valid&&i<n4.length)
+{
+if(n4[i].checked)
+{
+valid=true;
+}
+i++;
+}
+}
+
+</script>
+</head>
+<body class="rbody">
+<div id="headr">
+<p><h1 class="head1">WELCOME TO THE REGISTRATON FORM!<h1></p>
+<p><h3 class="subhead">PLEASE FILL THE FORM</h3></p>
+</div>
+<div id="reform" >
+<form ="reform" method="get" onsubmit="return validate()">
+<pre>
+<strong>
+<h2>
+<p style="padding-left:40px;color:black;">
+<a href="home.html">Home</a>
+</p>
+     Username     :   <input type="text" name="uname" maxlength="14" >
+
+     Password     :   <input type="password" name ="pword" placeholder="minimun 8 chars" maxlength="10" >
+
+     First Name   :   <input type="text" name="fname" placeholder="kapilan"  maxlength="15" >
+
+     Last Name    :   <input type="text" name="lname" placeholder="samaraj" maxlength="14">
+
+     Email-id     :   <input type="email" placeholder="xyz@gmail.com" >
+
+     Address      :
+                      <textarea  rows="4" cols="20" maxlength="60"  name= "address"></textarea>
+
+     Phone no     :   <input type="tel" name="phn" maxlength="10" required> 
+
+     Telephone no :   <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" name="Lno" required>
+
+     Dob          :   <input type ="date" name="dob" required>
+
+     Gender       :   <input type="radio" name="gender" checked>male <input type="radio" name="gender" >female <input type="radio" name="gender">others
+
+     Interest     : 
+                   	  
+					  <input type="checkbox" name="interest">Food 
+					  <input type="checkbox" name="interest">Politics
+					  <input type="checkbox" name="interest">Telephone
+					  <input type="checkbox" name="interest">Science
+					  <input type="checkbox" name="interest">Medicine
+	
+	
+   Qualification  :  <select>
+                     <option>BE</option>
+                     <option>Btech</option>
+                     <option>Bsc</option>
+					 <option>Msc</option>
+                     <option>Barch</option>
+                     <option>BBA</option>
+                     <option>MBA</option>
+                     <option>Mcom</option>
+					 </select>
+	
+   Country          :<input list="data" name="country"><datalist id ="data">
+	                 <option>America</option>
+	                 <option>Afghan</option>
+	                 <option>Indonesia</option>
+	                 <option>Italy</option>
+	                 <option>England</option>
+	                 <option>Canada</option>
+	                 <option>pakistan</option>
+	                 <option>Australia</option>
+	                 <option>Ireland</option>
+	                 <option>Finland</option>
+	                 <option>Srilankha</option>
+					 </datalist>
+					  
+					  
+					  
+					  
+					  
+					  </h2></strong></pre>
+</form>
+ <pre>
+<p id="down">hello</p>click below button to submit</p></pre>
+<p>
+<input type="submit" class="button" value="submit">
+</p>
+</body>
+</html>

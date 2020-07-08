@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>Register Form</title>
+<style type="text/css">
+.a{
+   font-size:24pt;
+   color:red;
+   padding-left:500px;
+  }
+.b{
+   font-size:20pt;
+   text-align:left;
+   color:blue;
+  }
+ body{
+      background-image:url("b.jpeg");
+      background-position:centre;
+      background-repeat:no-repeat;
+      background-size:cover;
+      padding-left:200px;
+     }
+</style>
+<script type="text/javascript">
+ function validate1()
+ {
+  var name1=document.forms["regform"]["First"];
+  if(name1.value=="")
+  {
+   alert("Enter your name");
+   name1.focus();
+   return false;
+  }
+  var name2=document.forms["regform"]["username"]; 
+  if(name2.value=="")
+  {
+   alert("Enter your Username");
+   name2.focus();
+   return false;
+  }
+  var name3=document.forms["regform"]["psw"]; 
+  if(name3.value=="")
+  {
+   alert("Enter your Password");
+   name3.focus();
+   return false;
+  }
+  var n1=document.forms["regform"]["email"];
+  if(n1.value=="")
+  {
+   alert("EMAIL should be filled out");
+   n1.focus();
+   return false;
+  }
+  var e = document.forms["regform"]["address"];
+  if (e.value=="") 
+  {
+   alert("Enter your Address");
+   e.focus();
+   return false;
+  }
+  
+  var x2 = document.forms["regform"]["phone"];
+  var phoneno=/^\d{10}$/;
+  if(x2.value!="")
+  {
+  elseif (x2.value.match(phoneno)) 
+  {
+   return true;
+  }
+  }
+  else
+   {
+    alert("Enter your phone number");
+   x2.focus();
+   return false;
+   }
+   var x = document.forms["regform"]["country"];
+  if (x.value=="") 
+  {
+   alert("Country should be select out");
+   x.focus();
+   return false;
+  }
+  var c = document.forms["regform"]["Gender"];
+  var valid=false;
+  var i=0;
+  while (!valid && i<c.length)
+  {
+   if(c[i].checked) valid=true;
+   i++;
+  }
+  if(!valid)
+  {
+   alert("GENDER must be filled out");
+   c.focus();
+   return false;
+  }
+ var d1 = document.forms["regform"]["interest"];
+  if (d1.checked==false) 
+  {
+   alert("Checkbox should be filled out");
+   d.focus();
+   return false;
+  }
+}
+</script>
+</head>
+<body>
+<form name="regform" method="get"  onsubmit="return validate1()">
+<p id="up"></p>
+<a href="#down">Scroll down</a>
+<p class="a">Welcome</p>
+<p class="b">Fill this form</p>
+<pre>
+<strong><h2>
+ Name         :<input type="text" name="First"><br>
+
+ Username     :<input type="text" name="username" ><br>
+
+ Password     :<input type="password"  name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one number and one uppercase and lowercase letter, and atleast 8 or more characters"><br> 
+
+ Email-id     :<input type="email" placeholder="Ex:abc@gmail.com"name="email"><br>
+
+ Address      :
+                <textarea name="address" rows="6" cols="15"></textarea><br>
+
+ Ph.no        :<input type="tel"maxlength="10" name="phone"><br>
+
+ Telephone no :<input type="tel"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="tele" title="Ex=111-222-4545"><br>
+
+ D.O.B        :<input type="date" name="dob"><br>
+
+ Gender:
+    <input type="radio" name="Gender">Male<br>
+    <input type="radio" name="Gender">Female<br>
+
+ Area of interest:
+    <input type="checkbox" name="interest">Science<br>
+    <input type="checkbox" name="interest">Food<br>
+    <input type="checkbox" name="interest">Technology<br>
+    <input type="checkbox" name="interest">Medicine<br>
+    <input type="checkbox" name="interest">Politics<br>
+
+ Qualification  :<select name="select">
+                  <option>BE</option>
+                  <option>BTech</option>
+                  <option>Bsc</option>
+                  <option>Msc</option>
+                  <option>Bcom</option>
+                  <option>Mcom</option> 
+                  <option>Phd</option> 
+                  <option>BBA</option>
+                  <option>MBA</option>
+                 </select>     
+
+ Country        :<input list="data" name="country">
+                  <datalist id="data">
+                    <option>America</option>
+                    <option>Britain</option>
+                    <option>Russia</option>
+                    <option>China</option>
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>Australia</option>
+                    <option>Africa</option>
+                    <option>Pakistan</option>
+                    <option>Nepal</option>
+                    <option>Srilanka</option>
+                  </datalist>				  
+<p style="padding-left:500px;"><button>submit</button></p>
+</h2>
+</strong>
+</pre>
+</form>
+<a href="#up">Scroll up</a>
+<p id="down"></p>
+</body>
+</html>
+
+

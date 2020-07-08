@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>journal publication</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+<style type="text/css">
+.tab2
+{
+position:absolute;
+z-index:2;
+margin-top:200px;
+left:200px;
+}
+.dd{
+display:block;
+}
+.ddc:hover
+{
+background-color:black;
+display:none;
+color:white;
+}
+.dropdown{
+overflow:hidden;}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+</head>
+<body class="hbody">
+ <aside id="im"><img src="book.jpg" height="100px" width="100px"></aside>
+ <aside id="jh">Journal publication</aside>
+ 
+<div id="img1">
+<img src="j1.jpg" width="310" height="220">
+</div>
+<div id="img2">
+<img src="j4.jpg" width="310" height="220">
+</div><p class="para1">
+Our website is one of the leading platform for publishing journals through online. We have been publishing the journals since nine years. It is a proud moment for us.ours  is an international peer reviewed, online and print version journal published by eSAT Publishing House for the enhancement of research in various disciplines of Engineering and Technology. The aim and scope of the journal is to provide an academic medium and an important reference for the advancement and dissemination of research results that support high-level learning, teaching and research in the fields of Engineering and Technology. We bring together Scientists, Academician, Field Engineers, Scholars and Students of related fields of Engineering and Technology. </p><p id="1"></p>
+
+ <section id="nau"><nav>
+<p class="dd"><a href ="home.html"  target="_blank">Home</a></p>
+<p class="call"><a href="callfp.html" target="_blank">call for papers</a></p>
+<a href="register1.html"  target="_blank">Register</a><br>
+<a href="callfp.html"  "#2"target="_blank">charges</a>
+<a href="statistics.html"  target="_blank">statistics</a><br>
+<a href="login.html"  target="_blank">login</nav><br>
+<div class="dropdown">
+<button>contact us</button>
+    <div class="dropdown-content">
+      <a href="#">FAQ</a>
+      <a href="#">help</a>
+    </div>
+</div>
+</section>
+<p class="ddc">
+<a href="help.html">help</a></p>
+
+<table border ="2" height="50" width="300">
+<thead>
+<tr>
+<th>No. of registered</th>
+<th>published</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25000<td>
+<td>16000</td>
+</tr>
+</tbody>
+<p>To publish your journal, please click link below</p>
+<a href="publish.html">Publish</a>
+<p>publication charges</p>
+<table class="tab2">
+<table border="2">
+<thead>
+<tr>
+<th>no of authors are 3 or 4</th>
+<th>no of authors are 4 or 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<Rs.1500/->
+</td> 
+<td>
+<Rs.2000/->
+</td>
+</tr>
+</tbody>
+</table>
+<footer style="background-color:#00008B;margin-top:130px;font-size:15px;text-align:center; margin-top:200px;height:80px;border-style:1px;width:100%;color:white;padding-top:20px;">
+<p>copyright &#169.All rights reserved</p>
+
+</footer></body>
+</html>

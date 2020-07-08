@@ -1,0 +1,68 @@
+<!DOCtype html>
+<html>
+<head>
+
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+<style type="text/css">
+</style>
+</head>
+<body class="rbody">
+<div id="headr">
+<p><h1 class="head1">WELCOME TO THE REGISTRATON FORM!<h1></p>
+<p><h3 class="subhead">PLEASE FILL THE FORM</h3></p>
+</div>
+<div id="reform" >
+<form action="http://localhost:7777/register"method="get" onsubmit="return validate()">
+<pre>
+<a href="home.html">Home</a>
+</p>
+     Username     :   <input type="text" name="uname" maxlength="14" >
+
+     Password     :   <input type="password" name ="pword" placeholder="minimun 8 chars" maxlength="10" >
+
+     First Name   :   <input type="text" name="fname" placeholder="kapilan"  maxlength="15" >
+
+     Last Name    :   <input type="text" name="lname" placeholder="samaraj" maxlength="14">
+
+     Email-id     :   <input type="email" name="mail" placeholder="xyz@gmail.com" >
+
+     Address      :
+                      <textarea  rows="4" cols="20" maxlength="60"  name= "address"></textarea>
+
+     Phone no     :   <input type="tel" name="phn" maxlength="10" required> 
+
+     Telephone no :   <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" name="Lno" required>
+
+     Dob          :   <input type ="date" name="dob" required>
+
+	 <input type="submit" value="submit">
+		</form>
+     Gender       :   <input type="radio" name="gender" checked>male <input type="radio" name="gender" >female <input type="radio" name="gender">others
+
+     Interest     : 
+                   	  
+					  <input type="checkbox" name="interest">CAR
+					  <input type="checkbox" name="interest">SEMINAR HALL	
+					  <input type="checkbox" name="interest">LAB
+	
+	
+   Qualification  :  <select>
+                     <option>BE</option>
+                     <option>Btech</option>
+                     <option>Bsc</option>
+					 <option>Msc</option>
+                     <option>Barch</option>
+                     <option>BBA</option>
+                     <option>MBA</option>
+                     <option>Mcom</option>
+					 </select>
+					  
+					  
+					  </h2></strong></pre>
+
+ <pre>
+<p id="down">hello</p>click below button to submit</p></pre>
+
+</body>
+</html>
